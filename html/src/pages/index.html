@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Devstore </title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container-devstore">
+      <div class="barra-lateral">
+        <div class="logo-nome">
+          <div class="logo"> <img src="../../public/assets/images/logo-devstore.svg" /> </div>
+          <div class="nome-dev"><a> Dev</a>Store</div>
+        </div>
+        <div class="barra"></div>
+        <div class="opcoes-gerenciamento">
+          <div class="texto-opcao">Gerenciamento</div>
+          <div class="img-opcao"> <img src="../../public/assets/images/seta-baixo.svg" /> </div>
+        </div>
+        <div class="lista-produto">
+          <div class="barra-esquerda"></div>
+          <div class="texto-produto"> Produtos </div>
+        </div>
+      </div>
+      <div class="conteudo">
+        <div class="cabecalho">
+          <div class="usu">
+            <div class="imagem-usu"> 
+              <img src="../../public/assets/images/Vito.png"/> 
+              <div class="bola-notificacao"> 3 </div>
+            </div>
+            <div class="ola-usu">Olá, <b>Vitório Trindade</b></div>
+          </div>
+          <div class="cabecalho-esq">
+            <div class="circulo-botao">
+              <div class="botao-recarregar"> <img src="../../public/assets/images/recarregar.svg" /> </div>
+            </div>
+            <div class="circulo-botao">
+              <div class="botao-sair"> <img src="../../public/assets/images/sair.svg" /> </div>
+            </div>
+          </div>
+        </div>
+        <div class="tabelas-e-inputs">
+          <div class="box-cadastro-editar">
+            <div class="titulo-barra">
+              <div class="barra-novo"></div>
+              <div class="titulo-novo">Novo Produto</div>
+            </div>
+            <div class="inputs-botao">
+                <div class="campo-input"> Nome: <input> </input> </div>
+                <div class="campo-input"> Preço de: <input> </input> </div>
+                <div class="campo-input"> Categoria: <input> </input> </div>
+                <div class="campo-input"> Preço por: <input> </input> </div>
+                <div class="campo-input"> Avaliação: <input> </input> </div>
+                <div class="campo-input"> Estoque: <input> </input> </div>
+                <div class="campo-input-descricao"> Link Imagem: <input> </input> </div>
+                <div class="campo-textarea"> Descrição: <textarea> </textarea> </div>
+                <div class="botao-cadastro"> <button> Cadastrar </button> </div>
+            </div>
+          </div>
+          <div class="box-tabela"> 
+              <div class="titulo-barra">
+                  <div class="barra-tabela"></div>
+                  <div class="titulo-tabela"> Produtos Cadastrados </div>
+              </div>
+              <table class="tabela-alunos"> 
+                <thead>
+                  <tr>
+                      <th>  </th> 
+                      <th> ID </th>
+                      <th> Produto </th>
+                      <th> Categoria </th>
+                      <th> Preço </th>
+                      <th> Estoque </th>
+                      <th className="coluna-acao"> </th>
+                      <th className="coluna-acao"> </th>
+                  </tr> 
+                </thead>
+                <tbody>
+                  <tr>
+                    <td> <img src="../../public/assets/images/kamina.jpg" style="width: 45px; height: 45px; border-radius: 50px;">  </td>
+                    <td> 1 </td>
+                    <td> Óculos do Kamina </td>
+                    <td> Óculos </td>
+                    <td> R$ 4.99 </td>
+                    <td> 23 </td>
+                    <td className="coluna-acao"> <button> <img src="../../public/assets/images/edit.svg"/> </button>  </td>
+                    <td className="coluna-acao"> <button> <img src="../../public/assets/images/trash.svg"> </button>  </td>
+                  </tr>
+                  <tr>
+                    <td> <img src="../../public/assets/images/gengar__wallpaper_.jpg" style="width: 45px; height: 45px; border-radius: 50px;">  </td>
+                    <td> 1 </td>
+                    <td> Wallpaper Gengar </td>
+                    <td> Imagens </td>
+                    <td> R$ 4.99 </td>
+                    <td> 23 </td>
+                    <td> </td>
+                    <td> </td>
+                  </tr>
+                  <tr>
+                    <td> <img src="../../public/assets/images/gengar__wallpaper_.jpg" style="width: 45px; height: 45px; border-radius: 50px;">  </td>
+                    <td> 1 </td>
+                    <td> Wallpaper Gengar </td>
+                    <td> Imagens </td>
+                    <td> R$ 4.99 </td>
+                    <td> 23 </td>
+                    <td> </td>
+                    <td> </td>
+                  </tr>
+                  <tr>
+                    <td> <img src="../../public/assets/images/gengar__wallpaper_.jpg" style="width: 45px; height: 45px; border-radius: 50px;">  </td>
+                    <td> 1 </td>
+                    <td> Wallpaper Gengar </td>
+                    <td> Imagens </td>
+                    <td> R$ 4.99 </td>
+                    <td> 23 </td>
+                    <td> </td>
+                    <td> </td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
