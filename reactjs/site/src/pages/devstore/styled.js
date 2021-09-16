@@ -4,38 +4,40 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
 
+  width: 100%;
+
   font-family: 'Roboto', sans-serif;
 `
 
 const Conteudo = styled.div`
 
-    width: 100%;
+    width: 90%;
 
-    .tabelas-e-inputs {
+  .tabelas-e-inputs {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 2em 3em;
+    padding: 2em 1.80em;
     background: linear-gradient(0deg, #f5f5f5, #f5f5f5), #f5f5f5;
-    }
+  }
 
-    .box-cadastro-editar {
+  .box-cadastro-editar {
     background-color: #ffffff;
     padding: 2em 8em 2em 2em;
     margin-bottom: 2em;
 
     width: 100%;
-    }
+  }
 
-    .titulo-barra {
+  .titulo-barra {
     display: flex;
     flex-direction: row;
     align-items: center;
 
     margin-bottom: 1em;
-    }
+  }
 
-    .barra-novo {
+  .barra-novo {
     width: 26px;
     height: 0px;
 
@@ -44,33 +46,33 @@ const Conteudo = styled.div`
     transform: rotate(-90deg);
 
     margin-right: 0.2em;
-    }
+  }
 
-    .titulo-novo {
+  .titulo-novo {
     color: #3c3939;
     font-weight: bold;
     font-size: 1.8em;
-    }
+  }
 
-    .inputs-botao {
+  .inputs-botao {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    }
+  }
 
-    .inputs-botao div:nth-child(1) {
+  .inputs-botao div:nth-child(1) {
     margin: 0em 4.4em 0.8em 3em !important;
-    }
+  }
 
-    .inputs-botao div:nth-child(5) {
+  .inputs-botao div:nth-child(5) {
         margin-right: 4.7em !important;
-    }
+  }
 
-    .campo-input {
+  .campo-input {
     margin: 0em 4em 0.8em 1.45em;
-    }
+  }
 
-    .campo-input > input {
+  .campo-input > input {
     width: 13.06em;
     height: 2.2em;
 
@@ -81,13 +83,13 @@ const Conteudo = styled.div`
     outline: none;
 
     padding: .6em;
-    }
+  }
 
-    .campo-input-imagem {
+  .campo-input-imagem {
     margin-bottom: 0.8em;
-    }
+  }
 
-    .campo-input-imagem input {
+  .campo-input-imagem input {
     width: 38.6em;
     height: 2.2em;
 
@@ -98,16 +100,16 @@ const Conteudo = styled.div`
     outline: none;
 
     padding: .6em;
-    }
+  }
 
-    .campo-textarea {
+  .campo-textarea {
         display: flex;
         text-align: center;
 
         margin-left: 1.2em;
-    }
+  }
 
-    .campo-textarea textarea {
+  .campo-textarea textarea {
     background-color: #ffffff;
     border: 1px solid #a8a8a8;
     border-radius: 5px;
@@ -116,11 +118,11 @@ const Conteudo = styled.div`
     height: 10em;
     resize: none;
 
-    margin: 0em 1.4em 0em 0.5em;
+    margin: 0em 2em 0em 0.5em;
     padding: .5em;
-    }
+  }
 
-    .botao-cadastro button {
+  .botao-cadastro button {
     background-color: #119FDC;
     color: white;
 
@@ -131,15 +133,15 @@ const Conteudo = styled.div`
     padding: 0.5em 0.7em;
 
     margin-top: 8em;
-    }
+  }
 
-    .box-tabela {
+  .box-tabela {
     background-color: #ffffff;
     padding: 2em;
     width: 100%;
-    }
+  }
 
-    .barra-tabela {
+  .barra-tabela {
     width: 26px;
     height: 0px;
 
@@ -148,47 +150,58 @@ const Conteudo = styled.div`
     transform: rotate(-90deg);
 
     margin-right: 0.2em;
-    }
+  }
 
-    .titulo-tabela {
+  .titulo-tabela {
     color: #3c3939;
     font-weight: bold;
     font-size: 1.8em;
-    }
+  }
 
-    .tabela-alunos {
+  .tabela-alunos {
     border-collapse: collapse;
-    }
+  }
 
-    table {
+  table {
     margin-top: 2em;
+    box-shadow: 0px 0px 4px 1px rgba(186, 186, 186, 0.25);
+
     width: 100%;
-    }
+  }
 
-    thead {
+  thead {
     background-color: #6CC3DF;
-    }
+  }
 
-    th {
+  thead th:nth-child(2) {
+    text-align: center !important;
+  }
+
+  th {
     height: 61.93px;
     text-align: left;
-    padding: 1em;
+    padding: 0.8em;
     color: #fff;
-    }
+  }
 
-    tbody {
+  tbody {
     background-color: #f5f5f5;
-    }
+  }
 
-    td {
+  .linha-alternada {
+    background-color: #fff;
+  }
+
+  td {
     text-align: left;
     height: 61.93px;
-    padding: 1em;
+    padding: 0.8em;
+
     color: #6d6868;
     font-weight: 600;
-    }
+  }
 
-    td > button {
+  td > button {
     border-radius: 70px;
     background-color: #565656;
 
@@ -199,11 +212,29 @@ const Conteudo = styled.div`
     outline: none;
 
     padding-top: .2em;
-    }
+  }
 
-    .coluna-acao {
+  td > img {
+    border-radius: 50px;
+    width: 47px;
+    height: 47px;
+  }
+
+  .coluna-acao {
     width: .1em;
-    }
+  }
+
+  .coluna-acao > button {
+    visibility: hidden;
+  }
+
+  tr:hover {
+
+      .coluna-acao > button {
+          visibility: visible;
+      }   
+
+  }
 `
 
 export { Container, Conteudo };

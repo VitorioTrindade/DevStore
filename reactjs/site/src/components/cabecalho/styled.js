@@ -45,7 +45,7 @@ const CabecalhoStyled = styled.div`
     width: 20px;
     height: 20px;
 
-    background: #e911c6;
+    background: #119FDC;
     color: white;
 
     position: absolute;
