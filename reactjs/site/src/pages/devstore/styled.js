@@ -61,15 +61,14 @@ const Conteudo = styled.div`
   }
 
   .inputs-botao div:nth-child(1) {
-    margin: 0em 4.4em 0.8em 3em !important;
+    margin: 0em 4.15em 0.8em 3em !important;
   }
-
   .inputs-botao div:nth-child(5) {
-        margin-right: 4.7em !important;
+    margin-right: 4.7em !important;
   }
 
   .campo-input {
-    margin: 0em 4em 0.8em 1.45em;
+    margin: 0em 3.25em 0.8em 1.45em;
   }
 
   .campo-input > input {
