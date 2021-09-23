@@ -83,6 +83,8 @@ const Conteudo = styled.div`
     outline: none;
 
     padding: .6em;
+
+    cursor: text;
   }
 
   .campo-input-imagem {
@@ -92,6 +94,7 @@ const Conteudo = styled.div`
   .campo-input-imagem input {
     width: 38.6em;
     height: 2.2em;
+    padding: .6em;
 
     background-color: #ffffff;
     border: 1px solid #a8a8a8;
@@ -99,7 +102,7 @@ const Conteudo = styled.div`
 
     outline: none;
 
-    padding: .6em;
+    cursor: text;
   }
 
   .campo-textarea {
@@ -120,6 +123,8 @@ const Conteudo = styled.div`
 
     margin: 0em 2em 0em 0.5em;
     padding: .5em;
+
+    cursor: text;
   }
 
   .botao-cadastro button {
@@ -133,6 +138,8 @@ const Conteudo = styled.div`
     padding: 0.5em 0.7em;
 
     margin-top: 8em;
+
+    cursor: pointer;
   }
 
   .box-tabela {
@@ -212,6 +219,8 @@ const Conteudo = styled.div`
     outline: none;
 
     padding-top: .2em;
+
+    cursor: pointer;
   }
 
   td > img {

@@ -5,7 +5,7 @@ export default function Menu() {
     return (
         <MenuStyled>
             <div className="logo-nome">
-            <div className="logo"> <img src="/assets/images/logo-devstore.svg" /> </div>
+            <div className="logo"> <img src="/assets/images/logo-devstore.svg" alt="" /> </div>
             <div className="nome-dev"><b> Dev</b>Store</div>
             </div>
             <div className="barra"></div>
