@@ -125,19 +125,19 @@ export default function DevStore() {
               <div className="tabelas-e-inputs">
                 <div className="box-cadastro-editar">
                     <div className="titulo-barra">
-                    <div className="barra-novo"></div>
-                    <div className="titulo-novo"> {idAlterando == 0 ? "Novo Produto" : "Alterando Produto " + idAlterando} </div>
+                        <div className="barra-novo"></div>
+                        <div className="titulo-novo"> {idAlterando === 0 ? "Novo Produto" : "Alterando Produto " + idAlterando} </div>
                     </div>
                     <div className="inputs-botao">
                         <div className="campo-input"> Nome: <input type="text" value={nome} onChange={e => setNome(e.target.value)} /> </div>
-                        <div className="campo-input"> Preço de: <input type="text" value={precoDe} onChange={e => setPrecoDe(e.target.value)}/> </div>
+                        <div className="campo-input"> Preço DE: <input type="text" value={precoDe} onChange={e => setPrecoDe(e.target.value)}/> </div>
                         <div className="campo-input"> Categoria: <input type="text" value={categoria} onChange={e => setCategoria(e.target.value)} /> </div>
-                        <div className="campo-input"> Preço por: <input type="text" value={precoPor} onChange={e => setPrecoPor(e.target.value)} /> </div>
+                        <div className="campo-input"> Preço POR: <input type="text" value={precoPor} onChange={e => setPrecoPor(e.target.value)} /> </div>
                         <div className="campo-input"> Avaliação: <input type="text" value={avaliacao} onChange={e => setAvaliacao(e.target.value)} /> </div>
                         <div className="campo-input"> Estoque: <input type="text" value={estoque} onChange={e => setEstoque(e.target.value)} /> </div>
                         <div className="campo-input-imagem"> Link Imagem: <input type="text" value={link} onChange={e => setLink(e.target.value)} /> </div>
                         <div className="campo-textarea"> Descrição: <textarea type="text" value={descricao} onChange={e => setDescricao(e.target.value)} />  </div>
-                        <div className="botao-cadastro"> <button onClick={inserir}> {idAlterando == 0 ? "Cadastrar" : "Alterar"}  </button> </div>
+                        <div className="botao-cadastro"> <button onClick={inserir}> {idAlterando === 0 ? "Cadastrar" : "Alterar"}  </button> </div>
                     </div>
                 </div>
                 <div className="box-tabela"> 
@@ -160,7 +160,7 @@ export default function DevStore() {
                         </thead>
                         <tbody>
                           {produtos.map((item, i) =>
-                                <tr className={i % 2 == 0 ? "linha-alternada" : ""}>
+                                <tr className={i % 2 === 0 ? "linha-alternada" : ""}>
                                     <td> <img src={item.img_produto} alt="" /> </td>
                                     <td> {item.id_produto} </td>
                                     <td title={item.nm_produto}>
